@@ -1,0 +1,66 @@
+:root {
+    --theme-color:white;
+    --primary-color:rgb(0, 162, 255);
+    --secondary-color:grey;
+    --text-color-inverse:white;
+    --text-color:black;
+    --menu-mobile-background-color:grey;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 70px;
+}
+body{
+    font-family: 'Vina Sans', cursive;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    padding-top: 70px;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.horizontal-padding{
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.vertical-padding{
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+@media (min-width:950px){
+    .horizontal-padding{
+        padding-left:70px;
+        padding-right:70px;
+    }
+    
+    .vertical-padding{
+        padding-top:70px;
+        padding-bottom:70px;
+    }
+}
+
+.banner video{
+    position: absolute;
+    right:0;
+    bottom:0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .banner video{
+        width:100%;
+        height:auto;
+    }
+}
+
+@media(max-width:1270px){
+    .banner video{
+        opacity: 0;
+    }
+}
